@@ -16,6 +16,10 @@ html{
     opacity: 75%;
 }
 
+.nav {
+    display: inline-block;
+}
+
 .nav, .sub-nav{
     list-style-type: none;
 }
@@ -50,14 +54,35 @@ html{
     position: absolute;
     top: 100%;
     background-color: white;
+    box-shadow: 0 0 10px #000;
+
 }
 
 .sub-nav li a{
     color: #000;
+
 }
 
 .nav li:hover .sub-nav{
     display: block;
+}
+
+.nav .nav-arrow-down{
+    font-size: 12px;
+}
+
+.search-btn{
+    float: right;
+    padding: 0 21px;
+    cursor: pointer;
+}
+.search-btn .search-icon{
+    color: #fff;
+    line-height: 46px;
+}
+
+.search-btn:hover {
+    background-color: red;
 }
 
 #slider{
