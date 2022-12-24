@@ -115,3 +115,51 @@ html{
 .text-content .text-describe{
     font-weight: bolder;
 }
+
+#content{
+    max-width: 800px;
+    padding: 64px 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#content .content-section{
+    padding: 0.01em 16px;
+}
+
+.content-section .content-heading, .content-subheading {
+    text-align: center;
+    padding-bottom: 16px;
+}
+
+.content-heading{
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.content-subheading{
+    font-style: italic;
+    color: #ccc;
+}
+
+.content-describe{
+    text-align: justify;
+}
+
+
+.content-section .content-member{
+    padding-top: 40px;
+}
+
+.content-member .member-info{
+    float: left;
+    text-align: center;
+}
+
+
+
+.member-info .img{
+    width: 60%;
+    margin-bottom: 16px;
+    border-radius: 4px;
+}
