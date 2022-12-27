@@ -99,7 +99,7 @@ div{
 #slider{
     position: relative;
     padding-top:50% ;
-    background: url('/the-band-web/src/assert/img/chicago.jpg') top center /cover no-repeat;
+    background: url('src/assert/img/chicago.jpg') top center /cover no-repeat;
 }
 
 #slider .text-content{
