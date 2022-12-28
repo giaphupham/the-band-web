@@ -12,8 +12,48 @@
 }
 /* Mobile */
 @media (max-width:740px){
+    #header{
+        opacity: 100%;
+        overflow: hidden;
+    }
+    
     .nav li{
         display: block;
     }
 
+    .sub-nav{
+        position: initial;
+        background-color: #000;
+    }
+
+    .sub-nav > li > a {
+        color: #fff;
+        margin-left: 16px;
+    }
+
+    #slider{
+        margin-top: 46px;
+    }
+
+    .text-content{
+        display: none;
+    }
+
+    .content-member .member-info{
+        width: 100%;
+        vertical-align: middle;
+    }
+
+    .tour-content .location-container .location{
+        width: 100%;
+    }
+
+    .contact-container .contact-info,
+    .contact-container .contact-form{
+        width: 100%;
+    }
+
+    #footer{
+        font-size: small;
+    }
 }

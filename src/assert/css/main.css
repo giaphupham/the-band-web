@@ -28,7 +28,7 @@ div{
     height: 46px;
     background-color: black;
     opacity: 85%;
-    overflow: hidden;
+
 }
 
 #header .hambeger-btn{
@@ -371,6 +371,3 @@ div{
     opacity: 0.60;
 }
 
-@media screen {
-    
-}

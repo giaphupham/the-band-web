@@ -21,14 +21,14 @@
                 <li><a href="#tour">TOUR</a></li>
                 <li><a href="#contact">CONTACT</a></li>
                 <li>
-                    <a>
+                    <a href="#">
                         MORE
                         <i class="nav-arrow-down ti-angle-down"></i>
                     </a>
                     <ul class="sub-nav">
-                        <li><a href>Mechandise</a></li>
-                        <li><a href>Extras</a></li>
-                        <li><a href>Media</a></li>
+                        <li><a href="#">Mechandise</a></li>
+                        <li><a href="#">Extras</a></li>
+                        <li><a href="#">Media</a></li>
                     </ul>
                 </li>
             </ul>
@@ -174,7 +174,21 @@
         }
 
         //
+        var menuItems = document.querySelectorAll('.nav li a[href*="#"]');
         
+        for (i = 0; i < menuItems.length; i++)
+        {
+            var menuItem = menuItems[i];
+
+            menuItem.onclick = function(event){
+                var isParentMenu = this.nextElementSibling && this.nextElementSibling.classList.contains('sub-nav');
+                if(isParentMenu){
+                    event.preventDefault();
+                }else{
+                    header.style.height = null;
+                }
+            }
+        }
     </script>
 </body>
 </html>
