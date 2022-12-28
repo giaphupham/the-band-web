@@ -4,20 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>The band</title>
     <link rel="stylesheet" href="./src/assert/css/main.css">
+    <link rel="stylesheet" href="./src/assert/css/responsive.css">
     <link rel="stylesheet" href="./src/assert/fonts/themify-icons-font/themify-icons/themify-icons.css">
 </head>
 <body>
     <div class="app">
         <div id="header">
+            <div id="mobile-menu" class="hambeger-btn">
+                <i class="hambeger-icon ti-menu"></i>
+            </div>
             <ul class="nav">
-                <li><a href>HOME</a></li>
-                <li><a href>BAND</a></li>
-                <li><a href>TOUR</a></li>
-                <li><a href>CONTACT</a></li>
+                <li><a href="#slider">HOME</a></li>
+                <li><a href="#band">BAND</a></li>
+                <li><a href="#tour">TOUR</a></li>
+                <li><a href="#contact">CONTACT</a></li>
                 <li>
-                    <a href>
+                    <a>
                         MORE
                         <i class="nav-arrow-down ti-angle-down"></i>
                     </a>
@@ -31,6 +35,7 @@
             <div class="search-btn">
                 <i class="search-icon ti-search"></i>
             </div>
+
         </div>
 
         <div id="slider">
@@ -41,7 +46,7 @@
         </div>
 
         <div id="content">
-            <div class="content-section">
+            <div id="band" class="content-section">
                 <h2 class="content-heading">THE BAND</h2>
                 <p class="content-subheading">We love music</p>
                 <p class="content-describe">We have created a fictional band website. 
@@ -68,7 +73,7 @@
                     </div>
                 </div>
             </div>
-            <div class="tour-content">
+            <div id="tour" class="tour-content">
                 <div class="tour-info">
                     <h2 class="content-heading">TOUR DATES</h2>
                     <p class="content-subheading">Remember to book your tickets!</p>
@@ -114,7 +119,7 @@
                     </div>
                 </div>
             </div>
-            <div class="content-section">
+            <div id="contact" class="content-section">
                 <h2 class="content-heading">CONTACT</h2>
                 <p class="content-subheading">Fan? Drop a note!</p>
                 <div class="contact-container">
@@ -152,5 +157,24 @@
             <p>This is my website with HTML and CSS</p>
         </div>
     </div>
+    <script>
+        var header = document.getElementById('header');
+        var hambegerBtn = document.getElementById('mobile-menu');
+        var headerHeight = header.clientHeight;
+
+
+        // 
+        hambegerBtn.onclick = function(){
+            var isClosed = header.clientHeight === headerHeight;
+            if(isClosed){
+                header.style.height = 'auto';
+            }else{
+                header.style.height = null;
+            }
+        }
+
+        //
+        
+    </script>
 </body>
 </html>

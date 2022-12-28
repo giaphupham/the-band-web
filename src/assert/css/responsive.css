@@ -1,0 +1,19 @@
+/* PC */
+@media (min-width: 1024px){
+    #header .hambeger-btn{
+        display: none;
+    }
+}
+/* Tablet */
+@media (min-width:740px) and (max-width:1023px){
+    #header .hambeger-btn{
+        display: none;
+    }
+}
+/* Mobile */
+@media (max-width:740px){
+    .nav li{
+        display: block;
+    }
+
+}
